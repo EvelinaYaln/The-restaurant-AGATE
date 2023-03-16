@@ -1,0 +1,47 @@
+.link {
+    font-size: 1rem;
+    font-weight: $semi-bold-font-weight;
+    display: block;
+    width: 312px;
+    height: 60px;
+    border-radius: 30px;
+    line-height: 60px;
+    @include center;
+    transition: all .5;
+}
+
+.link--white {
+    border: 1px solid white;
+    &:hover {
+        background: #FFA60D;
+        color: $text-color;
+        border-color: #FFA60D;
+        transform: scale(1.2);
+    }
+    &:active {
+        border-color: black;
+        color: #000;
+        background: none;
+    }
+}
+
+.link--black {
+    border: 1px solid black;
+    color: #000;
+    margin-top: 60px;
+    &:hover {
+        background: #FFA60D;
+        color: $text-color;
+        border-color: #FFA60D;
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .link {
+        width: 248px;
+        height: 48px;
+        font-size: .85rem;
+        line-height: 48px;
+    }
+}

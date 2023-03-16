@@ -1,0 +1,28 @@
+@mixin center {
+    margin: 0 auto;
+}
+
+@mixin flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin position ($position) {
+    position: $position;
+}
+
+@mixin text-align($text-align) {
+    text-align: $text-align;
+}
+
+@mixin pseudo-elements($bg-color) {
+    width: 58px;
+    height: 58px;
+    display: block;
+    border-radius: 50%;
+    background-color: $bg-color;
+    top: -25px;
+    left: -15px;
+    line-height: 58px;
+    font-size: .7rem;
+}

@@ -1,0 +1,17 @@
+    .title {
+        font-size: 2rem;
+        font-weight: $semi-bold-font-weight;
+        line-height: 50px;
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .title {
+            font-size: 1.75rem;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .title {
+            font-size: 1.5rem;
+        }
+    }

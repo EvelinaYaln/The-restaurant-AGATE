@@ -1,0 +1,26 @@
+.list {
+    margin: 60px 0;
+    &__item {
+        font-size: 1.75rem;
+        font-weight: $light-font-weight;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .list {
+        margin: 50px 0;
+        &__item {
+            font-size: $small-font-size;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list {
+        margin: 40px 0;
+        &__item {
+            font-size: 1.1rem;
+        }
+    }
+}

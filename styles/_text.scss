@@ -1,0 +1,17 @@
+.text {
+    font-size: $small-font-size;
+    font-weight: $light-font-weight;
+    line-height: 31px;
+}
+
+@media screen and (max-width: 1024px) {
+    .text {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 1rem;
+    }
+}

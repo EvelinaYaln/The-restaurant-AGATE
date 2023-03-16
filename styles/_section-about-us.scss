@@ -1,0 +1,25 @@
+.section-about-us {
+    padding: 100px 0;
+    background-color: $main-background-color;
+    &__content {
+        max-width: 941px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section-about-us {
+        padding: 80px 0;
+        &__content {
+            max-width: 602px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-about-us {
+        padding: 70px 0;
+        &__content {
+            max-width: 541px;
+        }
+    }
+}

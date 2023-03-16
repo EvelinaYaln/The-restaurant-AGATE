@@ -1,0 +1,69 @@
+ .images {
+     @include flex-container;
+     @include center;
+     justify-content: center;
+     padding: 0 24px 0;
+     &__pic {
+         width: calc((100% - 2*24px)/2);
+         max-width: 924px;
+         &:not(:nth-of-type(2n)) {
+             margin-right: 24px;
+         }
+         &:not(:nth-of-type(n+5)) {
+             margin-bottom: 24px;
+         }
+     }
+     &__img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
+ }
+ 
+ @media screen and (max-width: 1440px) {
+     .images {
+         padding: 0 12px 0;
+         &__pic {
+             max-width: 696px;
+         }
+     }
+ }
+ 
+ @media screen and (max-width: 1024px) {
+     .images {
+         padding: 0 15px 0;
+         &__pic {
+             max-width: 492px;
+         }
+         &:not(:nth-of-type(2n)) {
+             margin-right: 10px;
+         }
+         &:not(:nth-of-type(n+5)) {
+             margin-bottom: 10px;
+         }
+     }
+ }
+ 
+ @media screen and (max-width: 768px) {
+     .images {
+         padding: 0 24px 0;
+         &__pic {
+             max-width: 354px;
+         }
+         &:not(:nth-of-type(2n)) {
+             margin-right: 12px;
+         }
+         &:not(:nth-of-type(n+5)) {
+             margin-bottom: 12px;
+         }
+     }
+ }
+ 
+ @media screen and (max-width: 660px) {
+     .images {
+         padding: 0 15px 0;
+         &__pic {
+             max-width: 225px;
+         }
+     }
+ }

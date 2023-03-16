@@ -1,0 +1,18 @@
+.content {
+    font-size: $base-font-size;
+    font-weight: $light-font-weight;
+    line-height: 40px;
+    @include center;
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        font-size: 1rem;
+    }
+}
